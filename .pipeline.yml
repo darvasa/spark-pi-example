@@ -60,7 +60,6 @@ pipeline:
       spark.kubernetes.authenticate.driver.serviceAccountName: spark
       spark.metrics.conf: /opt/spark/conf/metrics.properties
       spark.eventLog.enabled: "false"
-      spark.eventLog.dir: "gs://[[your-gs-bucket]]/"
     spark_submit_app_args:
       - target/spark-pi-1.0-SNAPSHOT.jar
       - 1000
