@@ -4,6 +4,7 @@ pipeline:
     cluster_name: "darvasa-pipeline-cluster"
     cluster_provider: "google"
     google_project: "darvasa-pipeline-project"
+    google_gke_version: "1.9"
     google_node_count: "2"
 
     secrets: [plugin_endpoint, plugin_token]
